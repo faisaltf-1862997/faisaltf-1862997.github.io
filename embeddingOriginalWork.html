@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body {
+			background-color: black;
+		}
+
+		h1 {
+			text-align: center;
+			font-family: sans-serif;
+		}
+
+		iframe {
+			margin-left: 20px;
+		}
+
+		p {
+			color: black;
+			float: left;
+			margin-top: -3px;
+		}
+
+		object {
+			margin-left: 20px;
+		}
+
+		video {
+			margin-left: 20px;
+		}
+
+		channel {
+			clear: left;
+		}
+
+		.panel {
+			width: 100%;
+			height: 300px;
+			background-color: #f3f3f3;
+			border-radius: 10px;
+			border-style: solid;
+			margin-top: 20px;
+		}
+
+		#newbie {
+			color: #3ADD2F;
+			border-color: #3ADD2F;
+		}
+
+		#apprentice {
+			color: #FDF61D;
+			border-color: #FDF61D;
+		}
+
+		#master {
+			color: #FA2626;
+			border-color: #FA2626;
+			height: 320px;
+		}
+
+		#btry {
+			height: 180;
+			width: 250;
+		}
+		#dancingman
+		{		
+			margin-left: 40px;
+			margin-right: 20px;
+			float: left;
+			width: 150px;
+			height: 300px;
+			background-image: url(dancingGif1.gif);
+			background-size: contain;
+			background-repeat: no-repeat;
+			animation-name: color, jump;
+			animation-iteration-count: infinite, infinite;
+			animation-duration: 2s, 2s;
+		}
+
+		#vid {
+			animation-name: jump;
+			animation-iteration-count: infinite;
+			animation-duration: 2s;
+		}
+		/*object {
+			font-family: cursive;
+			background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+			  -webkit-background-clip: text;
+			  -webkit-text-fill-color: transparent;
+		}
+*/
+		@keyframes color{
+	    	0% {-webkit-filter:hue-rotate(50deg);}
+	    	10% {-webkit-filter:hue-rotate(100deg);}
+	    	20% {-webkit-filter:hue-rotate(150deg);}
+	    	30% {-webkit-filter:hue-rotate(200deg);}
+	    	40% {-webkit-filter:hue-rotate(250deg);}
+	    	50% {-webkit-filter:hue-rotate(300deg);}
+	    	60% {-webkit-filter:hue-rotate(350deg)}
+	    	70% {-webkit-filter:hue-rotate(400deg)}
+	    	80% {-webkit-filter:hue-rotate(450deg)}
+	    	90% {-webkit-filter:hue-rotate(500deg)}
+	    	100% {-webkit-filter:hue-rotate(600deg)}
+	   	}
+
+		@keyframes jump{
+			25% { transform: rotate(30deg); }
+			75% { transform: rotate(-30deg); }
+		}
+
+	</style>
+	<title>	</title>
+</head>
+	<body>
+		<div class="panel" id="newbie">
+			<h1>NEWBIE</h1>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.5159955819163!2d-122.31013918436778!3d47.65497157918792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549014f2ab81c35f%3A0x6dda64382ddc87a4!2sMary+Gates+Hall%2C+1851+NE+Grant+Ln%2C+Seattle%2C+WA+98105!5e0!3m2!1sen!2sus!4v1547502772087" width="250" height="187" frameborder="0" style="border:0; margin-left: 10px;" allowfullscreen></iframe>
+
+			<iframe width="320" height="180" src="https://www.youtube.com/embed/xuCn8ux2gbs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<div id="dancingman"></div>
+		</div>
+		<div class="panel" id="apprentice">
+			<h1>APPRENTICE</h1>
+			<video width="250" height="180" controls>
+				<source src="globe.mp4">
+			</video>
+			<iframe width="250" height="187" src="https://www.youtube.com/embed/xuCn8ux2gbs?start=180" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<object data="batteryBackground.html" id="btry"></object>
+			<p>The object tag links to a page that I wrote a while back that changes the background color based on the device's battery </p>
+		</div>
+		<div class="panel" id="master">
+			<h1>MASTER</h1>
+			<iframe id="vid" width="250" height="187" src="https://www.youtube.com/embed/xuCn8ux2gbs?start=180" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<video width="250" height="180" controls>
+				<source src="globe.mp4">
+			</video>
+			<audio controls>
+				<source src="Famous.mp3">
+			</audio>
+			<object data="batteryBackground.html" id="btry"></object>
+			<div> <!-- I wrapped the whole thing in a div so its positioning can be controlled -->
+				<rss version="2.0">
+					<channel>
+		    			<title>XUL</title>
+		    			<link>https://www.xul.fr</link>
+		    			<description></description>
+		    			<item>
+		    			<title>XUL news</title>
+		  				<link>https://www.xul.fr/index.php</link>
+		  				<description>RSS FEED</description>
+		    			</item>
+					</channel>
+				</rss>
+			</div>
+		</div>
+	</body>
+</html>
