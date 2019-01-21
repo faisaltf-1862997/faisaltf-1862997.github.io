@@ -1,0 +1,85 @@
+.panel {
+	width: 100%;
+	height: 300px;
+	background-color: #f3f3f3;
+	border-radius: 10px;
+	border-style: solid;
+	margin-top: 20px;
+}
+
+#newbie {
+	color: #3ADD2F;
+	border-color: #3ADD2F;
+}
+
+#apprentice {
+	color: #FDF61D;
+	border-color: #FDF61D;
+	height: 330px;
+}
+
+#master {
+	color: #FA2626;
+	border-color: #FA2626;
+	height: 320px;
+}
+
+p {
+	color: black;
+	margin-left: 20px;
+}
+
+#p1 {
+	font-family: sans-serif;
+}
+
+#p2 {
+	font-family: cursive;
+}
+
+.fiddy {
+	margin-left: 20px;
+	height: 50px;
+	width: 50px;
+}
+
+#rainbow {
+	font-family: cursive;
+	color: white;
+	width: 40px;
+	background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+}
+
+#dotted {
+	border-style: dotted;
+}
+
+#img1 {
+	height: 100px;
+	width: 100px;
+	margin: 20px;
+}
+
+#bg {
+	width: 80%;
+	margin: 20px;
+	color: white;
+	background-image: url(b.jpg);
+}
+
+#ball2 {
+	background-color: blue;
+	height: 100px;
+	width: 100px;
+	border-radius: 50px;
+	margin: 30px;
+}
+
+#ball {
+	float: right;
+	background-color: green;
+	height: 100px;
+	width: 100px;
+	border-radius: 50px;
+	margin: 30px;
+}
