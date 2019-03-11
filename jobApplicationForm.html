@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign Up Form</title>
+<meta  charset="utf-8" />
+<link rel="stylesheet" href="main.css">
+<script src="https://code.jquery.com/jquery-2.2.2.min.js"
+    type="text/javascript"></script>
+    <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js">
+    </script>
+    <script>
+    $(document).ready(function(){
+	/* The textarea automatically has a "  " so its never empty */
+	//$('#comments').val('');
+    $("#signUp").validate();
+});
+    </script>
+</head>
+
+<body>
+<nav>
+<ul id="topNav">
+<li style="border-left: none"><a href="http://sarafattani.com">Home</a>
+<li><a href="http://www.sarafattani.com/blog.html">Blog</a>
+<li><a href="http://www.sarafattani.com/yogara.html">Yogara</a>
+<li><a href="#">Contact</a>
+</ul>
+<img src="logo2.jpg" id="logo">
+</nav>
+<hr>
+<br>
+<form id="signUp" action="mailto:faisal.fattani@gmail.com" method="post">
+<fieldset>
+<div id="textinfo">Namaste! I am Sara and I'm delighted to have a yoga session with you. Please fill out this form to help me to prepare the best and most suitable yoga practice session that will fit your needs.</div> <br>
+	Class <br> 
+	<select name="whichClass" class="required">
+	<option value="namaste">Namaste Tuesdays</optoin>
+	<option value="outdoor">Outdoor Session</optoin>
+	<option value="sirvanada">Sirvanada</optoin>
+	</select>
+	<br>
+	<br>
+	<legend>Sign Up Form</legend>
+	<label for="name">Name</label><br>
+<input type="text" autofocus name="name" size="35" id="name" placeholder="Your name" class="required"/><br>
+	<label for="email">Email</label><br>
+<input type="email" name="email" size="35" id="email" placeholder="Your email" class="required"/><br>
+	<label for="phonenum">Phone Number</label><br>
+	<input type="text" name="phonenum" size="15" id="phonenum" placeholder="Your phone number" class="required"/><br>
+	<label for="age">Age</label><br>
+	<input type="text" name="age" size="15" id="age" placeholder="Your age" class="required"/><br>
+	Do you suffer any medical conditions from the ones listed below?<br>
+
+<input type="checkbox" name="medCondition" id="asthma" value="asthma">
+<label for="asthma">Asthma</label> <br>
+<input type="checkbox" name="medCondition" id="overweight" value="overweight">
+<label for="overweight"> overweight</label> <br>
+<input type="checkbox" name="medCondition" id="migraine" value="migraine">
+<label for="migraine"> migraine</label> <br>
+<input type="checkbox" name="medCondition" id="thyroid" value="thyroid">
+<label for="thyroid"> thyroid gland disorder</label> <br>
+<input type="checkbox" name="medCondition" id="back" value="backProblem">
+<label for="back">back problem</label> <br>
+<input type="checkbox" name="medCondition" id="neck" value="neckProlem">
+<label for="neck"> neck problem</label> <br>
+<input type="checkbox" name="medCondition" id="diabetes" value="diabetes">
+<label for="diabetes">diabetes</label> <br>
+<input type="checkbox" name="medCondition" id="blood" value="bloodPressure">
+<label for="blood"> blood pressure</label> <br>
+
+<label for="concerns">Please list any other physical or mental health concerns or medications you take that might affect your practice</label><br>
+	<input type="text" name="concerns" size="50" id="concerns" placeholder="Other concerns"/><br>
+
+Are you pregnant? <br>
+<input type="radio" name="pregnant" id="pregnant">
+<label for="pregnant">Pregnant</label>
+<br>
+<input type="radio" name="pregnant" id="notPregnant">
+<label for="notPregnant">Not Pregnant</label>
+<br>
+
+Do you have any prior yoga experience?<br>
+<input type="radio" name="prior" id="priorYogaExperience" value="y" class="required">
+<label for="priorYogaExperience">yes</label>
+<br>
+<input type="radio" name="pregnant" id="priorYoga" value="n">
+<label for="prioryoga">no</label>
+<br>
+
+If so, what level are you?<br>
+<input type="radio" name="level" id="advanced">
+<label for="advanced">Advanced</label>
+<br>
+<input type="radio" name="level" id="intermediate">
+<label for="intermediate">Intermediate</label>
+<br>
+<input type="radio" name="level" id="beginner">
+<label for="beginner">Beginner</label>
+<br>
+
+<label for="concerns">What do you hope to get out of these sessions ? </label><br>
+	<input type="text" name="goals" size="50" id="goals" placeholder="your goals/expectation"/><br>
+
+Do you have a yoga mat?<br>
+<input type="radio" name="mat" id="yesmat" value="y" class="required">
+<label for="yesmat">yes</label>
+<br>
+<input type="radio" name="mat" id="nomat" value="n">
+<label for="nomat">no</label>
+<br>
+<label for="comments">Additional information </label><br>
+	<input type="textarea" name="comments" size="50" id="comments" placeholder="Additional comments"/><br>
+
+<input type="submit" />
+</fieldset>
+</form>
+<footer>
+<ul id="media">
+<li><a href=""><img src="facebook.png"></a>
+<li><a href="https://www.instagram.com/yogara_by_sara/?hl=en"><img src="instagram.png"></a>
+<li><a href=""><img src="twitter.png"></a>
+</ul>
+<p>© 2019 YOGARA. ALL RIGHTS RESERVED.</p>
+</footer>
+</body>
+</html>
